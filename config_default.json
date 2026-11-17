@@ -1,0 +1,72 @@
+{
+  "photocraft_cli": "auto",
+  "carpeta_salida": "auto",
+  "plantilla_base": "E:\\CINEMA PRODUCTIONS\\COMPROBANTE\\COMPROBANTE - COMPLETO.psd",
+  "reserva_por_defecto": 600,
+  "paquete_destacado": "COMPLETO",
+  "vista_en_vivo": true,
+  "calidad_jpg": 92,
+  "paquetes": {
+    "ESENCIAL": {
+      "plantilla": "PLANTILLAS/COMPROBANTE - ESENCIAL.psd",
+      "precio": 1500,
+      "incluye": [
+        ["Fotos ilimitadas", "(Sin límite de horas)", "camara"],
+        ["Cobertura en", "(Ceremonia - fiesta)", "cobertura"],
+        ["Video con fotos", "(Fotos del evento)", "video_fotos"],
+        ["Galería online", "(Link con las fotos)", "galeria"]
+      ]
+    },
+    "INTERMEDIO": {
+      "plantilla": "PLANTILLAS/COMPROBANTE - INTERMEDIO.psd",
+      "precio": 2200,
+      "incluye": [
+        ["Fotos ilimitadas", "(Sin límite de horas)", "camara"],
+        ["Cobertura en", "(Maquillaje - ceremonia - fiesta)", "cobertura"],
+        ["Álbum de fotos", "(12 páginas)", "album"],
+        ["Video profesional", "(Tráiler para redes sociales)", "video"],
+        ["Memoria USB y link", "", "usb"]
+      ]
+    },
+    "COMPLETO": {
+      "plantilla": "PLANTILLAS/COMPROBANTE - COMPLETO.psd",
+      "precio": 3500,
+      "incluye": [
+        ["Fotos ilimitadas", "(Sin límite de horas)", "camara"],
+        ["Cobertura en", "(Maquillaje - ceremonia - fiesta)", "cobertura"],
+        ["Álbum de fotos", "(12 páginas)", "album"],
+        ["Video profesional", "(Tráiler para redes sociales)", "video"],
+        ["Video largo", "(30 min - 45 min de video)", "video_largo"],
+        ["Video con dron", "(Según condiciones del lugar)", "dron"],
+        ["Video con fotos", "(Fotos del evento)", "video_fotos"],
+        ["Buzón de audios", "(Mensajes de tus invitados)", "buzon"],
+        ["Memoria USB y link", "", "usb"]
+      ]
+    },
+    "PREMIUM": {
+      "plantilla": "PLANTILLAS/COMPROBANTE - PREMIUM.psd",
+      "precio": 5200,
+      "incluye": [
+        ["Fotos ilimitadas", "(Sin límite de horas)", "camara"],
+        ["Cobertura en", "(Maquillaje - ceremonia - fiesta)", "cobertura"],
+        ["Álbum de fotos", "(12 páginas)", "album"],
+        ["Foto enmarcada", "(12x18 grande + 1 pequeña)", "enmarcada"],
+        ["Video profesional", "(Tráiler para redes sociales)", "video"],
+        ["Video largo", "(30 min - 45 min de video)", "video_largo"],
+        ["Video con dron", "(Según condiciones del lugar)", "dron"],
+        ["Video con fotos", "(Fotos del evento)", "video_fotos"],
+        ["Buzón de audios", "(Mensajes de tus invitados 2H)", "buzon"],
+        ["Cabina 360", "(2 horas de cobertura)", "cabina360"],
+        ["Chispa fría", "(4 detonadores)", "chispa"],
+        ["Memoria USB y link", "", "usb"]
+      ]
+    }
+  },
+  "sustitutos_fuente": {
+    "Myriad Pro": { "fuente": "Open Sans", "estilo": "Bold", "tamano": 0.91, "ancho": 101 }
+  },
+  "eventos": {
+    "Boda": "BODA",
+    "XV años": "XV"
+  }
+}

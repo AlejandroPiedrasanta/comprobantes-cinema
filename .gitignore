@@ -1,0 +1,16 @@
+# Fuentes con licencia: no se publican (cada computadora instala las suyas)
+recursos/fuentes/
+
+# Temporales de Python y de la compilación
+__pycache__/
+*.pyc
+.venv*/
+empaquetar/build*/
+empaquetar/dist*/
+*.spec.bak
+
+# Datos de cada usuario (nunca se suben)
+*.db
+config.json
+*ajustes.json
+COMPROBANTES GENERADOS/

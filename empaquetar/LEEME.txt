@@ -1,0 +1,53 @@
+COMPROBANTES CINEMA PRODUCTIONS - Cómo crear e instalar el programa
+====================================================================
+
+CARPETAS
+  GENERADOR\PROGRAMA     todo el programa: código, plantillas PSD, fuentes, íconos y
+                         los scripts para crear los instaladores (carpeta empaquetar).
+                         Para usarlo sin instalar: doble clic en  ABRIR GENERADOR.bat
+  GENERADOR\INSTALADOR   - Comprobantes Cinema Portable.exe : PORTABLE, un solo archivo.
+                           Se abre con doble clic, sin instalar (también desde una USB).
+                           Guarda sus ajustes y la carpeta COMPROBANTES GENERADOS
+                           junto al .exe.
+                         - Instalar Comprobantes Cinema (Windows) 2.1.0.exe : el instalador
+                           para instalarlo en una computadora.
+
+REQUISITO EN CADA COMPUTADORA
+  - PhotoCraft instalado (el programa lo usa para editar los PSD).
+    Si no lo encuentra solo, usa el botón «PhotoCraft…» del programa.
+  - Las fuentes del diseño (Lemon Milk, GetVoIP Grotesque, Myriad Pro) se instalan solas.
+    Nota: Myriad Pro es una fuente comercial de Adobe; cada computadora debe tener su licencia.
+
+
+WINDOWS
+-------
+Instalar:  doble clic en  INSTALADOR\Instalar Comprobantes Cinema (Windows) 2.1.0.exe
+           (no pide permisos de administrador; crea acceso directo en el escritorio y en Inicio).
+Desinstalar:  Configuración > Aplicaciones > Comprobantes Cinema Productions.
+
+Volver a crear el instalador (después de cambiar el programa o las plantillas):
+  doble clic en  PROGRAMA\empaquetar\CREAR INSTALADOR WINDOWS.bat
+  (necesita Python con PySide6, PySide6-Fluent-Widgets, Pillow y PyInstaller, e Inno Setup 6).
+
+
+MAC
+---
+El instalador de Mac se tiene que crear EN una Mac:
+  1. Copia la carpeta GENERADOR completa a la Mac.
+  2. Abre Terminal, escribe  bash  y un espacio, arrastra el archivo
+     PROGRAMA/empaquetar/CREAR APP MAC.command  a la ventana y pulsa Enter.
+     (Si no tienes Python 3, el script te dirá dónde descargarlo.)
+  3. Al terminar queda  INSTALADOR/Comprobantes Cinema (Mac) 2.1.0.dmg
+Instalar:  abre el .dmg y arrastra «Comprobantes Cinema» a Aplicaciones.
+           La primera vez ábrelo con clic derecho > Abrir (no está firmado por Apple).
+
+
+DÓNDE QUEDA CADA COSA
+---------------------
+  Comprobantes generados:  Documentos\Comprobantes Cinema Productions
+                           (se puede cambiar con «Cambiar carpeta…»)
+  Preferencias:            Windows: %APPDATA%\Comprobantes Cinema Productions\config.json
+                           Mac: ~/Library/Application Support/Comprobantes Cinema Productions/config.json
+  Precios y servicios de cada paquete: PROGRAMA\config_default.json
+  Si cambias los servicios, ejecuta  python crear_plantillas.py  (en PROGRAMA)
+  y vuelve a crear el instalador.
